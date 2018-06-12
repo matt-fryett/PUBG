@@ -1,0 +1,4 @@
+,armorDestroy,itemAttach,itemDetach,itemDrop,itemEquip,itemPickup,itemUnequip,playerAttack,playerKill,playerPosition,playerTakeDamage,swimEnd,swimStart,t,vehicleDestroy,vehicleLeave,vehicleRide,x,y,z
+1527978955.555,,,,,,,,,,<playerPosition.playerPosition object at 0x00000184B9E9B240>,,,,1527978955.555,,,,344139.84375,170406.953125,1453.429931640625
+1527978965.568,,,,,,,,,,<playerPosition.playerPosition object at 0x00000184B9EA8208>,,,,1527978965.568,,,,341451.375,170409.765625,1706.7139892578125
+1527978975.627,,,,,,,,,,<playerPosition.playerPosition object at 0x00000184B9ED2940>,,,,1527978975.627,,,,336019.90625,170687.796875,1687.0699462890625

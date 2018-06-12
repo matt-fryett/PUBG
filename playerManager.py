@@ -19,7 +19,7 @@ from swimEnd import *
 from vehicleDestroy import *
 from vehicleLeave import *
 from vehicleRide import *
-
+import os
 import pandas as pd
 
 class playerManager:
@@ -54,9 +54,14 @@ class playerManager:
         self.z = np.array([x.z for x in self.events])
         self.t = [x.tidx for x in self.events]
         i=0
-        for i in range(len(self.t)):
-            if self.t[i-1]==self.t[i]:
-                self.t[i]+=0.0001
+        tHold = [self.t[0],0000]
+        for i in range(1,len(self.t)):
+            if self.t[i]==tHold[0]:
+                tHold[1] += 0.0001
+                self.t[i]+=tHold[1]
+            else:
+                tHold[0] = self.t[i]
+                tHold[1] = 0.0000
         self.t = np.array(self.t)
         self.loc = interp1d(self.t, np.array([self.x, self.y, self.z]), bounds_error=False, fill_value=np.nan)
 
@@ -95,7 +100,10 @@ class playerManager:
         #c1 = self.df.count()
         #self.df = self.df.groupby(["t"]).first()
         #c2 = 0
-        self.df.to_csv("./dataframes/"+str(self.accountId)+".csv")
+        directory = "./dataframes/"
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        self.df.to_csv(directory+str(self.accountId)+".csv")
         #self.df["swim"].fillna(method="ffill",inplace=True)
         #self.df["swim"].fillna(value=0,inplace=True)
         #if True in dfData["swim"]:
