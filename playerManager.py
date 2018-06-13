@@ -63,6 +63,7 @@ class playerManager:
                 tHold[0] = self.t[i]
                 tHold[1] = 0.0000
         self.t = np.array(self.t)
+
         self.loc = interp1d(self.t, np.array([self.x, self.y, self.z]), bounds_error=False, fill_value=np.nan)
 
         dfData = {}
@@ -90,31 +91,19 @@ class playerManager:
         scrapeList["vehicleRide"] = vehicleRide
         for y in zip(scrapeList.keys(),scrapeList.values()):
             dfData[y[0]] = np.array([x if isinstance(x,y[1]) else np.nan for x in self.events])
-        #dfData["swim"] =  np.array([True if isinstance(x,swimStart) else False if isinstance(x,swimEnd) else np.nan for x in self.events])
-        #dfData["playerAttack"] = np.array([x if isinstance(x,playerAttack) else np.nan for x in self.events])
 
-        #dfData["swim"].fillna(method="", inplace=True)
-        #dfData["swim"] = [False if isinstance(x, swimEnd) else np.nan for x in self.events]
+        vfunc = np.vectorize(lambda x: np.nan if pd.isnull(x) else np.float(x.gameTime))
+        dfData["elapsedTime"] = vfunc(dfData["playerPosition"])
+        dfData["swim"] =  np.array([True if isinstance(x,swimStart) else False if isinstance(x,swimEnd) else np.nan for x in self.events])
+
         self.df = pd.DataFrame(data=dfData,index=self.t)
-        #print(c1)
-        #c1 = self.df.count()
-        #self.df = self.df.groupby(["t"]).first()
-        #c2 = 0
+        self.df["swim"].fillna(method="ffill", inplace=True)
+        self.df["swim"].fillna(value=0, inplace=True)
         directory = "./dataframes/"
         if not os.path.exists(directory):
             os.makedirs(directory)
         self.df.to_csv(directory+str(self.accountId)+".csv")
-        #self.df["swim"].fillna(method="ffill",inplace=True)
-        #self.df["swim"].fillna(value=0,inplace=True)
-        #if True in dfData["swim"]:
-        #    print(self.df)
-        #print(self.loc)
-        #print(np.array([self.x,self.y,self.z]).transpose())
-        #self.loc = interp1d(self.t,)
 
-
-        #for e in self.events:
-        #    print(e.time,e.x,e.y,e.z)
 
     def getDiscreteCoords(self,**kwargs):
         t = np.array([x.time for x in self.events])
