@@ -1,8 +1,0 @@
-,armorDestroy,elapsedTime,itemAttach,itemDetach,itemDrop,itemEquip,itemPickup,itemUnequip,playerAttack,playerKill,playerPosition,playerTakeDamage,swim,swimEnd,swimStart,t,vehicleDestroy,vehicleLeave,vehicleRide,x,y,z
-1527978961.21,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B477334080>,,0.0,,,1527978961.21,,,,344172.78125,170480.03125,1453.43310546875
-1527978971.294,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B477355FD0>,,0.0,,,1527978971.294,,,,344172.78125,170480.03125,1453.43310546875
-1527978981.243,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B47737A278>,,0.0,,,1527978981.243,,,,343563.875,172134.5625,1453.429931640625
-1527978991.281,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B477744C88>,,0.0,,,1527978991.281,,,,340621.15625,173565.640625,1683.1199951171875
-1527979001.223,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B4773B0240>,,0.0,,,1527979001.223,,,,337456.03125,174582.78125,1683.179931640625
-1527979011.222,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B4774997F0>,,0.0,,,1527979011.222,,,,334220.5,172926.71875,1834.93994140625
-1527979021.229,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B477480D30>,,0.0,,,1527979021.229,,,,334435.0625,168511.640625,1738.489990234375
