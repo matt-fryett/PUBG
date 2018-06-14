@@ -95,7 +95,7 @@ class playerManager:
         vfunc = np.vectorize(lambda x: np.nan if pd.isnull(x) else np.float(x.gameTime))
         dfData["elapsedTime"] = vfunc(dfData["playerPosition"])
         dfData["swim"] =  np.array([True if isinstance(x,swimStart) else False if isinstance(x,swimEnd) else np.nan for x in self.events])
-
+        #something new
         self.df = pd.DataFrame(data=dfData,index=self.t)
         self.df["swim"].fillna(method="ffill", inplace=True)
         self.df["swim"].fillna(value=0, inplace=True)
