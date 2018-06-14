@@ -1,7 +1,7 @@
-,armorDestroy,elapsedTime,itemAttach,itemDetach,itemDrop,itemEquip,itemPickup,itemUnequip,playerAttack,playerKill,playerPosition,playerTakeDamage,swim,swimEnd,swimStart,t,vehicleDestroy,vehicleLeave,vehicleRide,x,y,z
-1527978960.555,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B477334F60>,,0.0,,,1527978960.555,,,,561125.1875,128608.09375,25679.900390625
-1527978970.56,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B47734B2E8>,,0.0,,,1527978970.56,,,,561088.0625,126034.578125,25678.4296875
-1527978980.597,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B477376668>,,0.0,,,1527978980.597,,,,564717.8125,123259.546875,25670.619140625
-1527978990.568,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B477744B00>,,0.0,,,1527978990.568,,,,568722.6875,118822.875,25751.638671875
-1527979000.558,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B4773BD128>,,0.0,,,1527979000.558,,,,574401.125,116336.9375,25582.5390625
-1527979010.568,,0.0,,,,,,,,,<playerPosition.playerPosition object at 0x000001B477499668>,,0.0,,,1527979010.568,,,,579097.4375,115089.3359375,25507.9296875
+,armorDestroy,elapsedTime,gameState,item,itemAttach,itemDetach,itemDrop,itemEquip,itemPickup,itemUnequip,playerAttack,playerKill,playerPosition,playerTakeDamage,swim,swimEnd,swimStart,t,vehicle,vehicleDestroy,vehicleLeave,vehicleRide,x,y,z
+1527978960.555,,-75.14299988746643,2,,,,,,,,,,<playerPosition.playerPosition object at 0x0000016008D99908>,,0.0,,,1527978960.555,Foot,,,,561125.1875,128608.09375,25679.900390625
+1527978970.56,,-65.13800001144409,2,,,,,,,,,,<playerPosition.playerPosition object at 0x0000016008DB69B0>,,0.0,,,1527978970.56,Foot,,,,561088.0625,126034.578125,25678.4296875
+1527978980.597,,-55.1010000705719,2,,,,,,,,,,<playerPosition.playerPosition object at 0x0000016008DDC438>,,0.0,,,1527978980.597,Foot,,,,564717.8125,123259.546875,25670.619140625
+1527978990.568,,-45.12999987602234,2,,,,,,,,,,<playerPosition.playerPosition object at 0x00000160091AA4E0>,,0.0,,,1527978990.568,Foot,,,,568722.6875,118822.875,25751.638671875
+1527979000.558,,-35.139999866485596,2,,,,,,,,,,<playerPosition.playerPosition object at 0x000001600942DA58>,,0.0,,,1527979000.558,Foot,,,,574401.125,116336.9375,25582.5390625
+1527979010.568,,-25.12999987602234,2,,,,,,,,,,<playerPosition.playerPosition object at 0x0000016009430198>,,0.0,,,1527979010.568,Foot,,,,579097.4375,115089.3359375,25507.9296875
